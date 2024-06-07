@@ -8,6 +8,12 @@ You can find each repository in ```./DEX-TTS``` and ```./GeDEX-TTS```.
 
 🙏 We recommend you visit our [demo site](https://dextts.github.io/demo.github.io/). 🙏
 
+## Updates
+
+For expressive TTS, we use the VCTK and ESD datasets.
+
+- The VCTK dataset can be downloaded [here](https://datashare.ed.ac.uk/handle/10283/2651).
+
 
 ## TODO
 - [ ] Update bigvgan vocoder 
