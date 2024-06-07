@@ -15,5 +15,5 @@ You can find each repository in ```./DEX-TTS``` and ```./GeDEX-TTS```.
 - [ ] Update code for GeDEX-TTS
 - [ ] Multi-gpu training
 - [ ] Preprocess simpler version
-- [ ] pre-trained weight
+- [ ] Pre-trained weight
 - [ ] Evaluation
