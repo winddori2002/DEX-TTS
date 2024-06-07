@@ -10,10 +10,10 @@ You can find each repository in ```./DEX-TTS``` and ```./GeDEX-TTS```.
 
 
 ## TODO
-- [ ] Code for DEX-TTS
-- [ ] Code for GeDEX-TTS
+- [ ] Update bigvgan vocoder 
+- [ ] Update code for DEX-TTS
+- [ ] Update code for GeDEX-TTS
 - [ ] Multi-gpu training
-- [ ] Preprocess simple 버젼으로 통합 (libritts 포함)
-- [ ] bigvgan 
-- [ ] pre-trained weight 추가
+- [ ] Preprocess simpler version
+- [ ] pre-trained weight
 - [ ] Evaluation
