@@ -12,14 +12,11 @@ You can find each repository in ```./DEX-TTS``` and ```./GeDEX-TTS```.
 
 For expressive TTS, we use the VCTK and ESD datasets.
 
-- The VCTK dataset can be downloaded [here](https://datashare.ed.ac.uk/handle/10283/2651).
 
 
-## TODO
-- [ ] Update bigvgan vocoder 
-- [ ] Update code for DEX-TTS
-- [ ] Update code for GeDEX-TTS
-- [ ] Multi-gpu training
-- [ ] Preprocess simpler version
+## ToDo
+- [X] Bigvgan vocoder for multi-speaker TTS
+- [ ] Multi-gpu training codes
+- [ ] LibriTTS training codes
 - [ ] Pre-trained weight
 - [ ] Evaluation
