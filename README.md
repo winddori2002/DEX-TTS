@@ -10,7 +10,7 @@ You can find each repository in ```./DEX-TTS``` and ```./GeDEX-TTS```.
 
 
 <p align="center">
-	<img src="./img/dextts.png" alt="DEX-TTS" width="90%" height="90%"/>
+	<img src="./images/DEXTTS.png" alt="DEX-TTS" width="90%" height="90%"/>
 </p>
 
 ## Updates
