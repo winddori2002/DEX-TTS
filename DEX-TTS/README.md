@@ -1,6 +1,6 @@
-# DEX-TTS: Diffusion-based EXpressive Text-to-Speech with Style Modeling on Time-Variability
+# DEX-TTS: Diffusion-based EXpressive Text-to-Speech with Style Modeling on Time Variability
 
-This repository is the official implementation of DEX-TTS: Diffusion-based EXpressive Text-to-Speech with Style Modeling on Time-Variability. 
+This repository is the official implementation of DEX-TTS: Diffusion-based EXpressive Text-to-Speech with Style Modeling on Time Variability. 
 
 In this repository, we provide steps for running DEX-TTS. 
 
