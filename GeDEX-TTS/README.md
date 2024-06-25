@@ -8,13 +8,12 @@ If you want to run DEX-TTS, move to [DEX-TTS](https://github.com/winddori2002/DE
 
 🙏 We recommend you visit our [demo site](https://dextts.github.io/demo.github.io/). 🙏
 
-GeDEX-TTS is the improved diffusion-based TTS, the general version of DEX-TTS, which does not use reference speech.
-
-The overall architecture of GeDEX-TTS is as below:
+GeDEX-TTS is the improved diffusion-based TTS, the general version of DEX-TTS, which does not use reference speech. The overall architecture of GeDEX-TTS is as below:
 
 <p align="center">
 	<img src="../images/GeDEXTTS.png" alt="GeDEX-TTS" width="90%" height="90%"/>
 </p>
+
 
 ## Requirements
 
