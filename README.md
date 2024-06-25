@@ -19,4 +19,5 @@ For expressive TTS, we use the VCTK and ESD datasets.
 - [ ] Multi-gpu training codes
 - [ ] LibriTTS training codes
 - [ ] Pre-trained weight
+- [ ] Precondition VE & VP
 - [ ] Evaluation
