@@ -1,0 +1,79 @@
+resume:
+test_checkpoint: 
+checkpoint:      ./checkpoints
+dataset:         'LJSpeech'
+vocoder:         'hifigan'   ## vocoder & vocoder path  ['bigvgan', 'hifigan']
+
+path:
+  train_path:     'filelists/LJSpeech/train.txt'
+  val_path:       'filelists/LJSpeech/valid.txt'
+  test_path:      'filelists/LJSpeech/test.txt'
+  cmu_path:       'resources/cmu_dictionary'
+  vocoder_path:   'hifigan/weights'
+
+preprocess:
+  sample_rate: 22050
+  n_mels:      80
+  n_fft:       1024
+  hop_length:  256
+  win_length:  1024
+  f_min:       0
+  f_max:       8000
+
+model:
+  add_blank:   True
+  n_feats:     80
+  n_spks:      1 # 108 for VCKT
+  spk_emb_dim: 64
+
+  encoder:
+    n_channels:         192
+    filter_channels:    1024
+    filter_channels_dp: 256
+    n_layers:           8
+    kernel_size:        3
+    p_dropout:          0.1
+    n_heads:            2
+    window_size:        4
+    use_softmax:        True
+    use_decay:          False
+
+  decoder:
+    dim:        64
+    pe_scale:   1000 
+    dim_mults:  [1, 2]
+    model_type: 'dit'  
+    precond:    'edm'  
+    loss_type:  'base'
+
+  dit:
+    in_channels:     3
+    patch_size:      7        # 3 | 7 | 15
+    stride_size:     4        # 2 | 4 | 8
+    overlap:         True
+    hidden_size:     256     
+    depth:           4        
+    num_heads:       2       
+    mlp_ratio:       2       
+    out_channels:    1
+    conv_pos:        16
+    conv_pos_groups: 8
+    use_decoder:     False
+    mask_type:       'time_random'  # random | freq | time | freq_random | time_random
+    
+
+train:
+  epoch:      2000
+  batch_size: 32
+  save_epoch: 200
+  syn_every:  200
+  fix_len:    2
+  out_size:   True
+  lr:         1e-4
+  max_grad:   1
+  amp:        True
+  mask_ratio: 0   # 0.1 | 0.3 | 0.5 | 0.7
+  unseen_spk: []
+
+test:
+  ema:          True
