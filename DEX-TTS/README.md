@@ -128,6 +128,20 @@ python synthesize.py --input_text "" --wav_path ./syn_samples --ref_name {wav na
 
 Pre-trained models will be provided.
 
+## ToDo
+- [X] Bigvgan vocoder for multi-speaker TTS
+- [ ] Multi-gpu training codes
+- [ ] LibriTTS & Simpe preprocess recipes
+- [ ] Pre-trained weight
+- [ ] Precondition VE & VP
+- [ ] Evaluation
+
+## Citation
+
+```
+
+```
+
 ## License
 
 > This repository will be released under the MIT license. 
