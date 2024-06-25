@@ -1,0 +1,105 @@
+resume:
+test_checkpoint: 
+checkpoint:      ./checkpoints
+dataset:         'ESD'
+vocoder:         'hifigan'   ## vocoder & vocoder path ['hifigan', 'bigvgan']
+
+path:
+  train_path:     'filelists/ESD/train_unseen.txt'
+  val_path:       'filelists/ESD/valid.txt'
+  test_path:      'filelists/ESD/test.txt'
+  cmu_path:       'resources/cmu_dictionary'
+  vocoder_path:   'hifigan/weights'          #  ['hifigan/weights', 'bigvgan/bigvgan_22khz_80band', 'bigvgan/bigvgan_base_22khz_80band']
+
+preprocess:
+  sample_rate: 22050
+  n_mels:      80
+  n_fft:       1024
+  hop_length:  256
+  win_length:  1024
+  f_min:       0
+  f_max:       8000
+
+model:
+  add_blank:   True
+  n_feats:     80
+  n_spks:      0 
+  spk_emb_dim: 64
+
+  tv_encoder: 
+    c_in:      80 
+    num_layer: 6
+    c_h:       128
+    c_out:     192
+    c_out_g:   192 
+    commit_w:  0.25
+    n_emb:     512
+
+  lf0_encoder:
+    c_in:      1
+    c_h:       192    # match n_feat
+    c_out:     192    # match encoder n_channels
+    c_out_g:   192   
+    num_layer: 2
+
+  tiv_encoder:
+    c_in:      80
+    num_layer: 6
+    c_h:       128   
+    c_out:     64  
+
+  encoder:
+    n_channels:         192    
+    filter_channels:    1024
+    filter_channels_dp: 256
+    n_layers:           8
+    kernel_size:        3
+    p_dropout:          0.1
+    n_heads:            2
+    window_size:        4
+    use_softmax:        True
+    use_decay:          False
+
+  decoder:
+    dim:        64   
+    pe_scale:   1000 
+    dim_mults:  [1, 2]
+    model_type: 'dit'  
+    precond:    'edm' 
+    loss_type:  'base'
+
+  dit:
+    in_channels:     3
+    patch_size:      3        # 3 | 7 | 15
+    stride_size:     2        # 2 | 4 | 8
+    overlap:         True
+    hidden_size:     256     
+    depth:           4       
+    num_heads:       2       
+    mlp_ratio:       2       
+    out_channels:    1
+    conv_pos:        16
+    conv_pos_groups: 8
+    use_decoder:     False
+    mask_type:       'time_random'  # random | freq | time 
+
+train:
+  epoch:      2000
+  batch_size: 32
+  save_epoch: 200
+  syn_every:  200
+  fix_len:    2
+  out_size:   True
+  lr:         1e-4
+  max_grad:   1
+  amp:        True
+  mask_ratio: 0   # 0.1 | 0.3 | 0.5 | 0.7
+  ref_type:   'mel'
+  sty_type:   'mel'
+  aug_type:   ['N', 'N', 'N']   # FTS | F | N
+  unseen_spk: [0, 7]
+
+test:
+  ema:          False
+  n_spks:       10
+
