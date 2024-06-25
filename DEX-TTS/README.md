@@ -11,7 +11,7 @@ If you want to run GeDEX-TTS, move to [GeDEX-TTS](https://github.com/winddori200
 DEX-TTS is diffusion-based expressive TTS which can extract and represent rich styles from the reference speech, using style modeling on time variability. The overall architecture of DEX-TTS is as below:
 
 <p align="center">
-	<img src="../images/DEXTTS.png" alt="DEX-TTS" width="80%" height="80%"/>
+	<img src="../images/DEXTTS.png" alt="DEX-TTS" width="70%" height="70%"/>
 </p>
 
 ## Requirements
