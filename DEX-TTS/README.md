@@ -6,6 +6,14 @@ In this repository, we provide steps for running DEX-TTS.
 
 🙏 We recommend you visit our [demo site](https://dextts.github.io/demo.github.io/). 🙏
 
+DEX-TTS is diffusion-based expressive TTS which can extract and represent rich styles from the reference speech, using style modeling on time variability.
+
+The overall architecture of DEX-TTS is as below:
+
+<p align="center">
+	<img src="../images/DEXTTS.png" alt="DEX-TTS" width="90%" height="90%"/>
+</p>
+
 ## Requirements
 
 First install torch based on your environment (We tested on torch version (1.10.1, 1.12.1, 2.1.0)).
