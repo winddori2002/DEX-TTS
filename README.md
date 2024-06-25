@@ -8,6 +8,11 @@ You can find each repository in ```./DEX-TTS``` and ```./GeDEX-TTS```.
 
 🙏 We recommend you visit our [demo site](https://dextts.github.io/demo.github.io/). 🙏
 
+
+<p align="center">
+	<img src="./img/dextts.png" alt="DEX-TTS" width="90%" height="90%"/>
+</p>
+
 ## Updates
 
 For expressive TTS, we use the VCTK and ESD datasets.
