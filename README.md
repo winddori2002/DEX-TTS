@@ -17,8 +17,7 @@ For expressive TTS, we use the VCTK and ESD datasets.
 ## ToDo
 - [X] Bigvgan vocoder for multi-speaker TTS
 - [ ] Multi-gpu training codes
-- [ ] LibriTTS training codes
+- [ ] LibriTTS & Simpe preprocess recipes
 - [ ] Pre-trained weight
-- [ ] Simplify preprocess stage
 - [ ] Precondition VE & VP
 - [ ] Evaluation
