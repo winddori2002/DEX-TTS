@@ -2,13 +2,13 @@
 
 This repository is the **official** implementation of *[DEX-TTS: Diffusion-based EXpressive Text-to-Speech with Style Modeling on Time Variability](https://arxiv.org/abs/2406.19135)*. 
 
-In this repository, we provide steps for running GeDEX-TTS, general TTS version of DEX-TTS.
+In this repository, we provide steps for running *GeDEX-TTS*, general TTS version of DEX-TTS.
 
-If you want to run DEX-TTS, move to [DEX-TTS](https://github.com/winddori2002/DEX-TTS/tree/main/DEX-TTS) repository.
+If you want to run *DEX-TTS*, move to [DEX-TTS](https://github.com/winddori2002/DEX-TTS/tree/main/DEX-TTS) repository.
 
 🙏 We recommend you visit our [demo site](https://dextts.github.io/demo.github.io/). 🙏
 
-GeDEX-TTS is the improved diffusion-based TTS, the general version of DEX-TTS, which does not use reference speech. The overall architecture of GeDEX-TTS is as below:
+*GeDEX-TTS* is the improved diffusion-based TTS, the general version of DEX-TTS, which does not use reference speech. The overall architecture of *GeDEX-TTS* is as below:
 
 <p align="center">
 	<img src="../images/GeDEXTTS.png" alt="GeDEX-TTS" width="70%" height="70%"/>
