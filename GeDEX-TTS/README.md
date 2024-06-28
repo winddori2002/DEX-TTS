@@ -1,6 +1,6 @@
 # DEX-TTS: Diffusion-based EXpressive Text-to-Speech with Style Modeling on Time-Variability
 
-This repository is the official implementation of DEX-TTS: Diffusion-based EXpressive Text-to-Speech with Style Modeling on Time-Variability. 
+This repository is the **official** implementation of *[DEX-TTS: Diffusion-based EXpressive Text-to-Speech with Style Modeling on Time Variability](https://arxiv.org/abs/2406.19135)*. 
 
 In this repository, we provide steps for running GeDEX-TTS, general TTS version of DEX-TTS.
 
@@ -21,6 +21,7 @@ First install torch based on your environment (We tested on torch version (1.10.
 
 ```
 conda install pytorch==1.10.1 torchvision==0.11.2 torchaudio==0.10.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+or
 pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html
 ```
 
