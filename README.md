@@ -4,27 +4,28 @@ This repository is the **official** implementation of *[DEX-TTS: Diffusion-based
 
 In this repository, we provide steps for running [DEX-TTS](https://github.com/winddori2002/DEX-TTS/tree/main/DEX-TTS) and [GeDEX-TTS](https://github.com/winddori2002/DEX-TTS/tree/main/GeDEX-TTS). 
 
-DEX-TTS is diffusion-based expressive TTS using reference speech.
-
-GeDEX-TTS is the general version of DEX-TTS, which does not use reference speech.
-
 🙏 We recommend you visit our [demo site](https://dextts.github.io/demo.github.io/). 🙏
 
-The overall architecture of DEX-TTS is as below:
+*DEX-TTS* is diffusion-based expressive TTS using reference speech. The overall architecture of *DEX-TTS* is as below:
 
 <p align="center">
-	<img src="./images/DEXTTS.png" alt="DEX-TTS" width="90%" height="90%"/>
+	<img src="./images/DEXTTS.png" alt="DEX-TTS" width="70%" height="70%"/>
 </p>
 
+*GeDEX-TTS* is the general version of DEX-TTS, which does not use reference speech. The overall architecture of *GeDEX-TTS* is as below:
+
+<p align="center">
+	<img src="./images/GeDEXTTS.png" alt="GeDEX-TTS" width="60%" height="60%"/>
+</p>
 
 ## Shortcuts
 
 You can find codes, a demo site, and paper links below.
 
-**[[Demo](https://dextts.github.io/demo.github.io/)]** &nbsp;&nbsp;&nbsp;&nbsp;
-**[[Paper](https://arxiv.org/abs/2406.19135)]** &nbsp;&nbsp;&nbsp;&nbsp;
-**[[DEX-TTS Code](https://github.com/winddori2002/DEX-TTS/tree/main/DEX-TTS)]** &nbsp;&nbsp;&nbsp;&nbsp;
-**[[GeDEX-TTS Code](https://github.com/winddori2002/DEX-TTS/tree/main/GeDEX-TTS)]** &nbsp;&nbsp;&nbsp;&nbsp;
+**[[👉 Demo](https://dextts.github.io/demo.github.io/)]** &nbsp;&nbsp;&nbsp;&nbsp;
+**[[📄 Paper](https://arxiv.org/abs/2406.19135)]** &nbsp;&nbsp;&nbsp;&nbsp;
+**[[💻 DEX-TTS Code](https://github.com/winddori2002/DEX-TTS/tree/main/DEX-TTS)]** &nbsp;&nbsp;&nbsp;&nbsp;
+**[[💻 GeDEX-TTS Code](https://github.com/winddori2002/DEX-TTS/tree/main/GeDEX-TTS)]** &nbsp;&nbsp;&nbsp;&nbsp;
 
 ## ToDo
 - [X] Bigvgan vocoder for multi-speaker TTS
