@@ -1,6 +1,6 @@
 # DEX-TTS: Diffusion-based EXpressive Text-to-Speech with Style Modeling on Time Variability
 
-This repository is the **official** implementation of *DEX-TTS: Diffusion-based EXpressive Text-to-Speech with Style Modeling on Time Variability*. 
+This repository is the **official** implementation of *[DEX-TTS: Diffusion-based EXpressive Text-to-Speech with Style Modeling on Time Variability](https://arxiv.org/abs/2406.19135)*. 
 
 In this repository, we provide steps for running [DEX-TTS](https://github.com/winddori2002/DEX-TTS/tree/main/DEX-TTS) and [GeDEX-TTS](https://github.com/winddori2002/DEX-TTS/tree/main/GeDEX-TTS). 
 
@@ -22,7 +22,7 @@ The overall architecture of DEX-TTS is as below:
 You can find codes, a demo site, and paper links below.
 
 **[[Demo](https://dextts.github.io/demo.github.io/)]** &nbsp;&nbsp;&nbsp;&nbsp;
-**[[Paper](https://arxiv.org/abs/2309.10740)]** &nbsp;&nbsp;&nbsp;&nbsp;
+**[[Paper](https://arxiv.org/abs/2406.19135)]** &nbsp;&nbsp;&nbsp;&nbsp;
 **[[DEX-TTS Code](https://github.com/winddori2002/DEX-TTS/tree/main/DEX-TTS)]** &nbsp;&nbsp;&nbsp;&nbsp;
 **[[GeDEX-TTS Code](https://github.com/winddori2002/DEX-TTS/tree/main/GeDEX-TTS)]** &nbsp;&nbsp;&nbsp;&nbsp;
 
