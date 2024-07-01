@@ -149,51 +149,7 @@ def get_mask(batch, length, mask_ratio, device, mask_type, h, w):
         noise       = torch.rand(batch, length, device=device)  # noise in [0, 1]
         ids_shuffle = torch.argsort(noise, dim=1)  # ascend: small is keep, large is remove
         ids_restore = torch.argsort(ids_shuffle, dim=1)
-    
-    elif mask_type == 'freq':
-        len_keep    = int(h * (1 - mask_ratio)) * w
-        noise       = torch.rand(batch, h, device=device)  # 0, 1, 2, 3,
-        ids_shuffle = torch.argsort(noise, dim=1)       
-        ids_shuffle = ids_shuffle.repeat_interleave(w).reshape(batch, -1)  # 0, 0, 0, .. 1, 1, 1, ...
-        ids_offset  = torch.arange(w, device=device).reshape(1, w).repeat(1, h)
-        ids_shuffle = ids_shuffle * w + ids_offset
-        ids_restore = torch.argsort(ids_shuffle, dim=1)
-        
-    elif mask_type == 'freq_random':
-        len_keep    = int(h * (1 - mask_ratio)) * w
-        noise       = torch.rand(batch, h, device=device)  # 0, 1, 2, 3,
-        ids_shuffle = torch.argsort(noise, dim=1)       
-        ids_shuffle = ids_shuffle.repeat_interleave(w).reshape(batch, -1)  # 0, 0, 0, .. 1, 1, 1, ...
-        ids_offset  = torch.arange(w, device=device).reshape(1, w).repeat(1, h)
-        ids_shuffle = ids_shuffle * w + ids_offset
-        ids_shuffle_a = ids_shuffle[:,:len_keep]
-        ids_shuffle_b = ids_shuffle[:,len_keep:]
-        ids_shuffle_a = ids_shuffle_a[:,torch.randperm(len_keep)]
-        ids_shuffle   = torch.cat([ids_shuffle_a, ids_shuffle_b], 1)
-        ids_restore = torch.argsort(ids_shuffle, dim=1)
-        
-    elif mask_type == 'time':
-        len_keep    = int(w * (1 - mask_ratio)) * h
-        noise       = torch.rand(batch, w, device=device)
-        ids_shuffle = torch.argsort(noise, dim=1)
-        ids_shuffle = ids_shuffle.repeat_interleave(h).reshape(batch, -1)
-        ids_offset  = torch.arange(h, device=device).reshape(1, h).repeat(1, w)
-        ids_shuffle = ids_shuffle + ids_offset * w
-        ids_restore = torch.argsort(ids_shuffle, dim=1)
-        
-    elif mask_type == 'time_random':
-        len_keep      = int(w * (1 - mask_ratio)) * h
-        noise         = torch.rand(batch, w, device=device)
-        ids_shuffle   = torch.argsort(noise, dim=1)
-        ids_shuffle   = ids_shuffle.repeat_interleave(h).reshape(batch, -1)
-        ids_offset    = torch.arange(h, device=device).reshape(1, h).repeat(1, w)
-        ids_shuffle   = ids_shuffle + ids_offset * w
-        ids_shuffle_a = ids_shuffle[:,:len_keep]
-        ids_shuffle_b = ids_shuffle[:,len_keep:]
-        ids_shuffle_a = ids_shuffle_a[:,torch.randperm(len_keep)]
-        ids_shuffle   = torch.cat([ids_shuffle_a, ids_shuffle_b], 1)
-        ids_restore   = torch.argsort(ids_shuffle, dim=1)
-        
+            
     ids_keep = ids_shuffle[:, :len_keep]
     ids_ban  = ids_shuffle[:,len_keep:]
 
