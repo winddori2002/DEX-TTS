@@ -32,7 +32,7 @@ You can find codes, a demo site, and paper links below.
 - [ ] Multi-gpu training codes
 - [ ] LibriTTS & Simpe preprocess recipes
 - [ ] Pre-trained weight for DEX-TTS
-- [ ] Pre-trained weight for GeDEX-TTS
+- [X] Pre-trained weight for GeDEX-TTS
 - [ ] Precondition VE & VP
 - [ ] Evaluation
 
