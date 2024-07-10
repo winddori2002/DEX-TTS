@@ -125,11 +125,11 @@ python synthesize.py --input_text "" --weight_path {weight path}
 
 ## Pre-trained Models
 
-Pre-trained models will be provided.
+You can find the model [weights](https://github.com/winddori2002/DEX-TTS/releases/tag/weights) trained on the LJSpeech dataset.
 
 ## ToDo
 - [X] Bigvgan vocoder for multi-speaker TTS
-- [ ] Pre-trained weight
+- [X] Pre-trained weight
 - [ ] Precondition VE & VP
 
 ## Citation
