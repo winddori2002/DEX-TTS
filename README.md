@@ -39,7 +39,12 @@ You can find codes, a demo site, and paper links below.
 ## Citation
 
 ```
-
+@article{park2024dex,
+  title={DEX-TTS: Diffusion-based EXpressive Text-to-Speech with Style Modeling on Time Variability},
+  author={Park, Hyun Joon and Kim, Jin Sob and Shin, Wooseok and Han, Sung Won},
+  journal={arXiv preprint arXiv:2406.19135},
+  year={2024}
+}
 ```
 
 ## License
