@@ -31,7 +31,8 @@ You can find codes, a demo site, and paper links below.
 - [X] Bigvgan vocoder for multi-speaker TTS
 - [ ] Multi-gpu training codes
 - [ ] LibriTTS & Simpe preprocess recipes
-- [ ] Pre-trained weight
+- [ ] Pre-trained weight for DEX-TTS
+- [ ] Pre-trained weight for GeDEX-TTS
 - [ ] Precondition VE & VP
 - [ ] Evaluation
 
