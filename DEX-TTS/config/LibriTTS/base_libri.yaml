@@ -1,0 +1,105 @@
+resume:
+test_checkpoint: 
+checkpoint:      ./checkpoints
+dataset:         'LibriTTS'
+vocoder:         'hifigan' 
+
+path:
+  train_path:     []          
+  val_path:       []
+  test_path:      []
+  cmu_path:       'resources/cmu_dictionary'
+  vocoder_path:   'hifigan/weights'       
+
+preprocess:
+  sample_rate: 22050
+  n_mels:      80
+  n_fft:       1024
+  hop_length:  256
+  win_length:  1024
+  f_min:       0
+  f_max:       8000
+
+model:
+  sil_token:   True
+  add_blank:   True
+  n_feats:     80
+  n_spks:      0  
+  spk_emb_dim: 64
+
+  tv_encoder: 
+    c_in:      80 
+    num_layer: 6
+    c_h:       256
+    c_out:     256
+    c_out_g:   256 
+    commit_w:  0.25
+    n_emb:     512
+
+  lf0_encoder:
+    c_in:      1
+    c_h:       256    
+    c_out:     256   
+    c_out_g:   256   
+    num_layer: 2
+
+  tiv_encoder:
+    c_in:      80 
+    num_layer: 6
+    c_h:       256    
+    c_out:     64  
+
+  encoder:
+    n_channels:         256    
+    filter_channels:    1024
+    filter_channels_dp: 256
+    n_layers:           8
+    kernel_size:        3
+    p_dropout:          0.1
+    n_heads:            2
+    window_size:        4
+    use_softmax:        True
+    use_decay:          False
+
+  decoder:
+    dim:        128   
+    pe_scale:   1000  
+    dim_mults:  [1, 2]
+    model_type: 'dit'  
+    precond:    'edm' 
+    loss_type:  'base' 
+
+  dit:
+    in_channels:     3
+    patch_size:      3      
+    stride_size:     2     
+    overlap:         True
+    hidden_size:     384      
+    depth:           4        
+    num_heads:       2       
+    mlp_ratio:       2       
+    out_channels:    1
+    conv_pos:        16
+    conv_pos_groups: 8
+    use_decoder:     False
+    mask_type:       'time_random'  # random | freq | time 
+
+train:
+  epoch:        1000
+  batch_size:   36
+  save_epoch:   100
+  syn_every:    100
+  fix_len:      2
+  ref_size:     3
+  out_size:     True
+  lr:           1e-4
+  max_grad:     5
+  amp:          False
+  mask_ratio:   0  
+  ref_type:     'mel' 
+  sty_type:     'mel'
+  aug_type:     ['N', 'N', 'N']   # FTS | F | N
+
+test:
+  ema:          False
+  n_spks:       108
