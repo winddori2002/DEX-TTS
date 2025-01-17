@@ -6,7 +6,7 @@ In this repository, we provide steps for running *DEX-TTS*.
 
 If you want to run *GeDEX-TTS*, move to [GeDEX-TTS](https://github.com/winddori2002/DEX-TTS/tree/main/GeDEX-TTS) repository.
 
-🙏 We recommend you visit our [demo site](https://dextts.github.io/demo.github.io/). 🙏
+🙏 We recommend you visit our [demo site](https://tts-demo.github.io/demo.github.io/). 🙏
 
 *DEX-TTS* is diffusion-based expressive TTS which can extract and represent rich styles from the reference speech, using style modeling on time variability. The overall architecture of *DEX-TTS* is as below:
 
