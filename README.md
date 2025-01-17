@@ -4,7 +4,7 @@ This repository is the **official** implementation of *[DEX-TTS: Diffusion-based
 
 In this repository, we provide steps for running [DEX-TTS](https://github.com/winddori2002/DEX-TTS/tree/main/DEX-TTS) and [GeDEX-TTS](https://github.com/winddori2002/DEX-TTS/tree/main/GeDEX-TTS). 
 
-🙏 We recommend you visit our [demo site](https://dextts.github.io/demo.github.io/). 🙏
+🙏 We recommend you visit our [demo site](https://tts-demo.github.io/demo.github.io/). 🙏 
 
 *DEX-TTS* is diffusion-based expressive TTS using reference speech. The overall architecture of *DEX-TTS* is as below:
 
@@ -22,7 +22,7 @@ In this repository, we provide steps for running [DEX-TTS](https://github.com/wi
 
 You can find codes, a demo site, and paper links below.
 
-**[[👉 Demo](https://dextts.github.io/demo.github.io/)]** &nbsp;&nbsp;&nbsp;&nbsp;
+**[[👉 Demo](https://tts-demo.github.io/demo.github.io/)]** &nbsp;&nbsp;&nbsp;&nbsp;
 **[[📄 Paper](https://arxiv.org/abs/2406.19135)]** &nbsp;&nbsp;&nbsp;&nbsp;
 **[[💻 DEX-TTS Code](https://github.com/winddori2002/DEX-TTS/tree/main/DEX-TTS)]** &nbsp;&nbsp;&nbsp;&nbsp;
 **[[💻 GeDEX-TTS Code](https://github.com/winddori2002/DEX-TTS/tree/main/GeDEX-TTS)]** &nbsp;&nbsp;&nbsp;&nbsp;
